@@ -39,4 +39,4 @@ testem.log
 Thumbs.db
 
 #source control
-.svn
+/.svn
