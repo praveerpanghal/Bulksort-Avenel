@@ -1,0 +1,26 @@
+.choose_input{
+   width: 60%;
+   float: left;
+}
+.choose_file{
+    width: 40%;
+}
+
+.import{
+
+    height: 50%;
+    border: 1px solid black;
+    width: 100%
+  }
+  @media (min-width:414px) and (max-width:1276px) {
+   
+        .choose_file_button{
+            width: 100%;
+        }
+        .import{
+           
+              height: 35%;
+             
+            }
+
+}

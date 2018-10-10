@@ -1,0 +1,35 @@
+
+<span style="margin-left:50px;">Login! </span><span><b>Shankar Katkala</b></span>
+<hr>
+<div class="row">
+  <div class="col-md-8">
+    <app-file-upload 
+    projectId="100" 
+    sectionId="107" 
+    maxFiles="4"
+    maxSize="2"
+    fileExt="XML"
+    (uploadStatus)="refreshImages($event)" >
+  </app-file-upload> 
+</div>
+<div class="col-md-4">
+  <input class="export" type="button" value="Export to XML" (click) = "ExportRecords()">
+  
+</div>
+
+</div>
+
+<hr>
+
+
+<!-- <h2>Here are some links to help you start: </h2> -->
+<ul style="clear:both">
+
+  <!-- <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2> -->
+  <div class="MainBlock"  *ngFor="let i of product_img">
+    <input type='checkbox' name="acs" [value]='i.sku'/>
+    <img src='{{i.imageurl}}' width="200px" height="200px" alt=""> <br>
+    <span> Name: {{i.name}}</span> <br>
+    <span> Price:{{i.price}}</span> 
+  </div>
+</ul>

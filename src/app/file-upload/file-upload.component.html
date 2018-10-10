@@ -1,0 +1,14 @@
+<div class="main">
+<div class="" >
+<input 
+  style="display: none" 
+  type="file" (change)="onFileChanged($event)" 
+  #fileInput accept="text/xml">
+ <input class="choose_input choose_file_button"  type="text" name="" id="" value="{{fileName}}" readonly >
+</div>
+<div class="" >
+<button class="choose_file choose_file_button " (click)="fileInput.click()">Choose File....</button>
+</div>
+</div>
+
+<button  class="import" (click)="onUpload()" [disabled]="loading">Import!</button>

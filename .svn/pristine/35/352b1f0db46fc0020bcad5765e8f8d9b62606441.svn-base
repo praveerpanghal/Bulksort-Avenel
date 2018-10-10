@@ -1,0 +1,11 @@
+.MainBlock{
+    float: left;
+    position: relative;
+    border: 1px solid black;
+    height: 300px;
+    width: 400px;
+    margin: 5px;
+}
+.NameBlock{
+    position: absolute;
+}
